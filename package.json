@@ -1,21 +1,19 @@
 {
   "name": "psk-reusables",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Reusable logic and components for building tolbi mobile apps",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "src/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src --out-dir lib --extensions \".ts,.tsx,.js,.jsx\" && cp -r src/assets lib/assets",
-    "storybook-generate": "sb-rn-get-stories"
+    "build": "babel src --out-dir lib --extensions \".ts,.tsx,.js,.jsx\" && cp -r src/assets lib/assets"
   },
   "author": "Pape Kaliou Ka (psk)",
   "license": "ISC",
   "peerDependencies": {
-    "@react-native-firebase/crashlytics": "^20.4.0",
     "@react-navigation/stack": "^6.4.1",
     "react-i18next": "^15.0.1",
-    "react-native": "^0.75.2",
-    "react-native-config": "^1.5.3",
+    "react-native": "^0.74.5",
     "react-native-paper": "^5.12.5"
   },
   "devDependencies": {
@@ -27,9 +25,6 @@
     "@react-native-async-storage/async-storage": "^2.0.0",
     "@react-native-community/datetimepicker": "^8.2.0",
     "@react-native-community/slider": "^4.5.2",
-    "@storybook/addon-ondevice-actions": "^7.6.20",
-    "@storybook/addon-ondevice-controls": "^7.6.20",
-    "@storybook/react-native": "^7.6.20",
     "@types/react": "^18.3.5",
     "@types/react-native": "^0.73.0",
     "babel-loader": "^8.3.0",

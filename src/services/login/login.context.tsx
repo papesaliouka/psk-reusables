@@ -3,6 +3,8 @@ import React, { createContext, useState, ReactNode, ContextType } from 'react';
 import { loginRequest } from '../login/login.service';
 import StorageUtils from '../storage/storage';
 
+import {PaperProvider} from 'react-native-paper';
+
 // Define the type for the user object (adjust based on the actual user structure)
 interface User {
   id?: string;
@@ -64,6 +66,7 @@ export const AuthenticationContextProvider: React.FC<AuthenticationContextProvid
   };
 
   return (
+    <PaperProvider>
     <AuthenticationContext.Provider
       value={{
         isLoading,
@@ -80,6 +83,7 @@ export const AuthenticationContextProvider: React.FC<AuthenticationContextProvid
     >
       {children}
     </AuthenticationContext.Provider>
+    </PaperProvider>
   );
 };
 

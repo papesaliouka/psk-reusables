@@ -28,6 +28,8 @@ const Input: React.FC<InputProps> = ({
 }) => {
   const [visible, setVisible] = React.useState(false);
 
+  
+
   return (
     <>
       <Text style={{ marginHorizontal: 20 }}>{label}</Text>

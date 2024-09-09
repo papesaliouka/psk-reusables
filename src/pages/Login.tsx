@@ -13,6 +13,8 @@ import { Linking } from 'react-native';
 import StorageUtils from '../services/storage/storage';
 import { StackNavigationProp } from '@react-navigation/stack';
 
+import i18next from '../services/i18next/i18next';
+
 // Define types for props (if you're using React Navigation)
 interface LoginScreenProps {
   navigation: StackNavigationProp<any>;
@@ -74,15 +76,15 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ navigation, api_url })
 
   return (
     <SafeAreaView style={styles.container}>
-      <Image style={{}} source={require('../assets/connexion-illustration.png')} />
+      <Image style={styles.logo} source={require('../assets/connexion-illustration.png')} />
       <Text style={styles.typography}>{t('SignIn')}</Text>
       <Text style={styles.typography2}>{t('UseCredentials')}</Text>
       <Input onChange={onEmailChange} style={styles.textInputContainer} label={t('Username')} />
       <Input secure={true} onChange={onPasswordChange} style={styles.textInputContainer} label={t('Password')} />
       <Button style={styles.loginButton} title={t('Login')} onPress={onPress} />
-      <Button style={styles.problemButton} title={t('ConnectionProblem')} onPress={showModal} />
+      <Button style={styles.problemButton} title={t('ConnectionProblem')} onPress={()=> null} />
       {isLoading && <Loader text={t('ConnectAccount')} />}
-      {report && <Report  />}
+      {report && <Report style={styles.report}  />}
     </SafeAreaView>
   );
 };

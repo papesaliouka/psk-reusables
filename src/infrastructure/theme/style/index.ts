@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: "flex-start",
     },
-    logo:{
+    logo: {
         width: "50%",
         height: "20%",
         marginTop: 107,

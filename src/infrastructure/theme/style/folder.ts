@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     borderRadius: spacing.lg,
     backgroundColor: colors.white,
     marginVertical: spacing.md,
-    marginHorizontal: spacing.sm,
+    marginLeft: spacing.md,
   },
   contentContainer:{
     display: 'flex',
@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
     gap: spacing.md,
     borderRadius: spacing.md,
     backgroundColor: colors.bg_tertiary,
+    flexDirection:'row'
   },
 
 });

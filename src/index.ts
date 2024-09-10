@@ -6,7 +6,15 @@ import Profile from "./components/Profile/Profile";
 import { AuthenticationContext } from "./services/login/login.context";
 import StorageUtils from "./services/storage/storage";
 import LoginScreen from "./pages/Login";
-import ProjectCard from "./components/ProjectCard/ProjectCard";
+
+import { 
+  ProjectCard,
+  ProjectCulture,
+  ProjectHeader,
+  ProjectItemCard,
+  ProjectLegend,
+  ProjectLegendItem
+} from "./components/Project";
 
 import i18next from "./services/i18next/i18next"
 
@@ -34,4 +42,10 @@ export {
   ProjectCard,
   colors,
   spacing,
+  ProjectCulture,
+  ProjectHeader,
+  ProjectItemCard,
+  ProjectLegend,
+  ProjectLegendItem
+  
 };

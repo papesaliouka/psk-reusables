@@ -60,6 +60,15 @@ interface AuthenticationContextProviderProps {
   children: ReactNode;
 }
 
+interface HeaderProps {
+  navigation: StackNavigationProp<any>;
+  title: string;
+  search?: boolean;
+  wifi?: boolean;
+  icon?: string;
+}
+
+
 // Declare the module 'psk-reusables'
 declare module 'psk-reusables' {
   export function ButtonComponent(props: ButtonComponentProps): JSX.Element;

@@ -48,6 +48,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ navigation, api_url })
       if (!response) {
         Alert.alert(t('Invalid credentials'));
       }
+      navigation.navigate('Home');
     } catch (e) {
       Alert.alert(t('something went wrong'));
     }

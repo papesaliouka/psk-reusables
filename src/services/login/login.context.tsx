@@ -25,6 +25,8 @@ export interface AuthenticationContextType {
   setFormId: React.Dispatch<React.SetStateAction<string | null>>;
   setUser: React.Dispatch<React.SetStateAction<User | null>>;
   setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  isConnected: boolean;
+  setIsConnected: React.Dispatch<React.SetStateAction<boolean>>;
 } 
 
 // Create context with initial empty state
@@ -42,6 +44,7 @@ export const AuthenticationContextProvider: React.FC<AuthenticationContextProvid
   const [user, setUser] = useState<User | null>(null);
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
   const [formId, setFormId] = useState<string | null>(null);
+  const [isConnected, setIsConnected] = useState<boolean>(false); 
 
   // Define the login function
   const onLogin = async (email: string, password: string, api_url: string): Promise<User | null> => {
@@ -79,6 +82,8 @@ export const AuthenticationContextProvider: React.FC<AuthenticationContextProvid
         setFormId,
         setUser,
         setIsLoading,
+        isConnected,
+        setIsConnected,
       }}
     >
       {children}

@@ -327,3 +327,7 @@ const styles = StyleSheet.create({
 })
 
 export default styles;
+
+import folderStyle from './folder';
+
+export {folderStyle};

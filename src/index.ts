@@ -6,10 +6,14 @@ import Profile from "./components/Profile/Profile";
 import { AuthenticationContext } from "./services/login/login.context";
 import StorageUtils from "./services/storage/storage";
 import LoginScreen from "./pages/Login";
+import ProjectCard from "./components/ProjectCard/ProjectCard";
 
 import i18next from "./services/i18next/i18next"
 
 import styles from "./infrastructure/theme/style";
+
+import colors from "./infrastructure/theme/colors";
+import spacing from "./infrastructure/theme/spacing";
 
 
 import { AuthenticationContextProvider } from './services/login/login.context';
@@ -26,5 +30,8 @@ export {
   i18next,
   Header,
   Profile,
-  styles
+  styles,
+  ProjectCard,
+  colors,
+  spacing,
 };

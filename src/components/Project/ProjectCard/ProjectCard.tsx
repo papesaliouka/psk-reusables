@@ -12,7 +12,7 @@ import ProjectLegend from '../ProjectLegend/ProjectLegend';
 
 
 
-const ProjectCard = (  ) => {
+const ProjectCard = ( {header=false, navigation} ) => {
 
   const legends = [
     {title:'Riz', color: colors.blue},
@@ -24,7 +24,7 @@ const ProjectCard = (  ) => {
 
   return (
     <Card style={styles.container}>
-      <ProjectHeader title='Faitrade' />
+      {header && <ProjectHeader title='Faitrade' navigation={navigation} />}
       <View style={{flexDirection: 'row', justifyContent: 'space-between', width: '100%'}} >
         <ProjectItemCard title='Surface occupées' quantity={2757} unit='Hectares' imgUrl={require('../../../assets/LayersRounded.png')} />
         <ProjectItemCard title='Zone(s)' quantity={20} unit='' imgUrl={require('../../../assets/maximize-02.png')} />

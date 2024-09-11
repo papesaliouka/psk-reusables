@@ -6,6 +6,7 @@ import Profile from "./components/Profile/Profile";
 import { AuthenticationContext } from "./services/login/login.context";
 import StorageUtils from "./services/storage/storage";
 import LoginScreen from "./pages/Login";
+import ProjectViewScreen from "./pages/ProjectView";
 
 import { 
   ProjectCard,
@@ -13,7 +14,7 @@ import {
   ProjectHeader,
   ProjectItemCard,
   ProjectLegend,
-  ProjectLegendItem
+  ProjectLegendItem,
 } from "./components/Project";
 
 import i18next from "./services/i18next/i18next"
@@ -46,6 +47,6 @@ export {
   ProjectHeader,
   ProjectItemCard,
   ProjectLegend,
-  ProjectLegendItem
-  
+  ProjectLegendItem,
+  ProjectViewScreen
 };

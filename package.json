@@ -1,6 +1,6 @@
 {
   "name": "psk-reusables",
-  "version": "1.0.35",
+  "version": "1.0.38",
   "description": "Reusable logic and components for building tolbi mobile apps",
   "main": "lib/index.js",
   "types": "lib/index.d.js",

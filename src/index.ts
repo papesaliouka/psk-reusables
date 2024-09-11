@@ -8,6 +8,13 @@ import StorageUtils from "./services/storage/storage";
 import LoginScreen from "./pages/Login";
 import ProjectViewScreen from "./pages/ProjectView";
 
+import FarmerCard from "./components/Farmer/FarmerCard/FarmerCard";
+import FarmerList from "./components/Farmer/FarmerList/FarmerList";
+import FarmerViewScreen from "./pages/FarmerView";
+
+
+import ZoneViewScreen from "./pages/ZoneView";
+
 import { 
   ProjectCard,
   ProjectCulture,
@@ -48,5 +55,8 @@ export {
   ProjectItemCard,
   ProjectLegend,
   ProjectLegendItem,
-  ProjectViewScreen
+  ProjectViewScreen,
+  FarmerViewScreen,
+  ZoneViewScreen,
+  FarmerCard,
 };

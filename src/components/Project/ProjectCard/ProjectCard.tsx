@@ -22,12 +22,22 @@ const ProjectCard = ( {header=false, navigation} ) => {
     {title:'Ail', color: colors.sucess}
   ];
 
+  const navigateToZoneView = () => {
+    navigation.navigate('ZoneView');
+  } 
+
+  const navigateToSurfaceView = () => {
+    navigation.navigate('FarmerView');
+  }
+
+
+
   return (
     <Card style={styles.container}>
       {header && <ProjectHeader title='Faitrade' navigation={navigation} />}
       <View style={{flexDirection: 'row', justifyContent: 'space-between', width: '100%'}} >
-        <ProjectItemCard title='Surface occupées' quantity={2757} unit='Hectares' imgUrl={require('../../../assets/LayersRounded.png')} />
-        <ProjectItemCard title='Zone(s)' quantity={20} unit='' imgUrl={require('../../../assets/maximize-02.png')} />
+        <ProjectItemCard title='Surface occupées' quantity={2757} unit='Hectares' imgUrl={require('../../../assets/LayersRounded.png')} onPress={navigateToSurfaceView}  />
+        <ProjectItemCard title='Zone(s)' quantity={20} unit='' imgUrl={require('../../../assets/maximize-02.png')} onPress={navigateToZoneView}   />
       </View>
       <ProjectCulture title='Cultures' imgUrl={require('../../../assets/GrassRounded.png')} quantity={6} />
       <ProjectLegend legends={legends} />    

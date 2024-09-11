@@ -329,5 +329,9 @@ const styles = StyleSheet.create({
 export default styles;
 
 import folderStyle from './folder';
+import farmerStyle from './farmer';
 
-export {folderStyle};
+export {
+    folderStyle,
+    farmerStyle,
+};
